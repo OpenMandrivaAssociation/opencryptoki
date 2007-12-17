@@ -19,7 +19,6 @@ Requires(post): rpm-helper
 Requires(preun): rpm-helper
 Requires(pre): rpm-helper
 Requires(postun): rpm-helper
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root
 
 %description
 The openCryptoki package implements the PKCS#11 version 2.11: Cryptographic 
