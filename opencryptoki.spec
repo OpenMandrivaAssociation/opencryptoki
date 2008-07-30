@@ -5,7 +5,7 @@
 Summary:	An Implementation of PKCS#11 (Cryptoki) v2.11 
 Name:		opencryptoki 
 Version:	2.2.4.1
-Release:	%mkrel 1
+Release:	%mkrel 3
 Group:		System/Servers
 License:	CPL 
 URL:		http://sourceforge.net/projects/opencryptoki 
