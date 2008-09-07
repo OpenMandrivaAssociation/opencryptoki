@@ -4,12 +4,12 @@
 
 Summary:	An Implementation of PKCS#11 (Cryptoki) v2.11 
 Name:		opencryptoki 
-Version:	2.2.4.1
-Release:	%mkrel 3
+Version:	2.2.6
+Release:	%mkrel 1
 Group:		System/Servers
 License:	CPL 
 URL:		http://sourceforge.net/projects/opencryptoki 
-Source0:	http://downloads.sourceforge.net/opencryptoki/%{name}-%{version}.tar.bz2 
+Source0:	http://downloads.sourceforge.net/opencryptoki/%{name}-%{version}.tar.gz
 BuildRequires:	autoconf2.5
 BuildRequires:	automake
 BuildRequires:	libtool
@@ -19,7 +19,7 @@ Requires(post): rpm-helper
 Requires(preun): rpm-helper
 Requires(pre): rpm-helper
 Requires(postun): rpm-helper
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 The openCryptoki package implements the PKCS#11 version 2.11: Cryptographic 
@@ -106,6 +106,11 @@ rm -rf %{buildroot}
 %attr(0755,root,root) %{_sbindir}/pkcsconf
 %attr(0755,root,root) %{_sbindir}/pkcs_slot
 %attr(0755,root,root) %{_sbindir}/pkcs11_startup
+%{_mandir}/man1/pkcs11_startup.1*
+%{_mandir}/man1/pkcsconf.1*
+%{_mandir}/man5/pk_config_data.5*
+%{_mandir}/man7/opencryptoki.7*
+%{_mandir}/man8/pkcsslotd.8*
 
 %files -n %{libname}
 %defattr(-,root,root)
