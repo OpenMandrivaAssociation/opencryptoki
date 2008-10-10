@@ -73,7 +73,7 @@ rm -f %{buildroot}%{_libdir}/%{name}/stdll/*.la
 
 %pre
 /usr/sbin/groupadd -r pkcs11 2>/dev/null || true
-/usr/sbin/usermod -G $(/usr/bin/id --groups --name root | /bin/sed -e '
+/usr/sbin/usermod -G $(/bin/id --groups --name root | /bin/sed -e '
 # add the pkcs group if it is missing
 /(^| )pkcs11( |$)/!s/$/ pkcs11/
 # replace spaces by commas
