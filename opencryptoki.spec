@@ -8,7 +8,7 @@ Version:	2.2.6
 Release:	%mkrel 3
 Group:		System/Servers
 License:	CPL 
-URL:		http://sourceforge.net/projects/opencryptoki 
+URL:		https://sourceforge.net/projects/opencryptoki 
 Source0:	http://downloads.sourceforge.net/opencryptoki/%{name}-%{version}.tar.gz
 BuildRequires:	autoconf2.5
 BuildRequires:	automake
