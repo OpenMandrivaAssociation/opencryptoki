@@ -10,6 +10,8 @@ Group:		System/Servers
 License:	CPL 
 URL:		https://sourceforge.net/projects/opencryptoki 
 Source0:	http://downloads.sourceforge.net/opencryptoki/%{name}-%{version}.tar.gz
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
 BuildRequires:	autoconf2.5
 BuildRequires:	automake
 BuildRequires:	libtool
